@@ -1,0 +1,43 @@
+ul.summary, ul.summary-hl {
+  list-style-type: none;
+  font-size: 1.7em;
+
+}
+
+ul.summary-hl li {
+  color: #727272;
+}
+
+ul.summary-hl li.current {
+  color: #FFF;
+}
+
+svg text {
+  fill: #FFF;
+  font-size: 80%;
+  opacity: 0.25;
+}
+
+svg#roadmap1 > text, svg#roadmap7 > text {
+  opacity: 1;
+}
+
+svg#roadmap2 text.arrow-0 {
+  opacity: 1;
+}
+
+svg#roadmap3 text.arrow-1 {
+  opacity: 1;
+}
+
+svg#roadmap4 text.arrow-2 {
+  opacity: 1;
+}
+
+svg#roadmap5 text.arrow-3 {
+  opacity: 1;
+}
+
+svg#roadmap6 text.arrow-4 {
+  opacity: 1;
+}
