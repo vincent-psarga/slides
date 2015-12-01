@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Automate your tests at the speed an scale of agile</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="../lib/css/reveal.css">
+    <link rel="stylesheet" href="../lib/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="../lib/css/hiptest-automation.css">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/css/print/pdf.css' : '../lib/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <svg height="0">
+      <defs>
+        <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="6"
+               orient="auto" style="fill: #f3554c">
+            <path d="M2,2 L2,11 L10,6 L2,2" />
+        </marker>
+
+        <filter id="box-shadow" filterUnits="userSpaceOnUse" x="0" y="0" width="200" height="120">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+          <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+          <feMerge> 
+            <feMergeNode/> <!-- this contains the offset blurred image -->
+            <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <img src="../images/logo.png" class="logo"/>
+          <h1>Automate your tests at the speed an scale of agile</h1>
+        </section>
+
+        <section data-transition="fade-out">
+          <ul class="summary">
+            <li>Who we are</li>
+            <li>Key learnings</li>
+            <li>Demo</li>
+          </ul>
+        </section>
+
+        <section data-transition="fade-in">
+          <ul class="summary-hl">
+            <li class="current">Who we are</li>
+            <li>Key learnings</li>
+            <li>Demo</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <table id="whoweare">
+              <thead>
+                <tr>
+                  <th>
+                    <h3>Laurent Py</h3>
+                  </th>
+                  <th>
+                    <h3>Vincent Pretre</h3>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Product manager</p>
+                  </td>
+                  <td>
+                    <p>Senior developer</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h3>Hiptest</h3>
+            <p>Test management in the cloud</p>
+            <p>BDD framework</p>
+          </section>
+        </section>
+
+        <section data-transition="fade-in">
+          <ul class="summary-hl">
+            <li>Who we are</li>
+            <li class="current">Key learnings</li>
+            <li>Demo</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Automation is not silver bullet</h2>
+          </section>
+
+          <section>
+            <p><em>Testing</em> = Scripting + Exploring</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Testing at Hiptest</h2>
+          </section>
+
+          <section>
+            <p>DevOps team: 10 deployments a day</p>
+          </section>
+
+          <section>
+            <p>100% of integration tests automated</p>
+
+            <svg viewBox="0 0 400 130" id="test-pyramide">
+              <polygon points="100,0 145,45 55,45" style="fill:#f3554c" />
+              <text x="200" y="25">800 Integration &amp; acceptance</text>
+              <polygon points="155,55 200,100 0,100 45,55" style="fill:#5b5b5b" />
+              <text x="200" y="75">2800 Unit</text>
+            </svg>
+          </section>
+
+          <section>
+            <p>Exploratory testing of new features</p>
+          </section>
+
+          <section>
+            <p>Monitor and test on production</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>#1 - Test automation is not about ROI but about velocity</h2>
+          </section>
+          <section>
+            <h3><img src="images/parkeon.png" class="logo header-logo" alt="parkeon sample" /></h3>
+            <ul>
+              <li>6000 automated BDD tests</li>
+              <li>Dozens of tests using a robot</li>
+              <li>100 manual tests</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>#2 - Be careful with Record &amp; Playback</h2>
+        </section>
+
+        <section>
+          <section>
+            <h2>#3 - Make sure you have the skills</h2>
+          </section>
+          <section>
+            <ul>
+              <li>Only work on test automation if you have the skills to work on production code</li>
+              <li>Only work on production code if you have the skills to work on test automation</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>#4 - Separate your test framework into layers</h2>
+          </section>
+          <section>
+            <svg viewBox="0 0 300 150" class="test-layers">
+              <rect width="200" height="55" class="main-box" />
+              <rect x="5" y="5" width="190" height="20" class="sub-box" />
+              <text text-anchor="middle" x="100" y="15">Test (Given/When/Then)</text>
+
+              <rect x="5" y="30" width="190" height="20" class="sub-box" />
+              <text text-anchor="middle" x="100" y="40">Steps (consistent business terminology)</text>
+
+              <rect width="200" height="80" y="60" class="main-box" />
+              <rect x="5" y="65" width="190" height="20" class="sub-box" />
+              <text text-anchor="middle" x="100" y="75">Text fixtures (Page object)</text>
+
+              <rect x="5" y="90" width="93" height="20" class="sub-box" />
+              <text text-anchor="middle" x="50" y="100">Web driver</text>
+
+              <rect x="102" y="90" width="93" height="20" class="sub-box" />
+              <text text-anchor="middle" x="146" y="100">API</text>
+
+              <rect x="5" y="115" width="45" height="20" class="sub-box" />
+              <text text-anchor="middle" x="27" y="125">Mock</text>
+
+              <rect x="55" y="115" width="140" height="20" class="sub-box" />
+              <text text-anchor="middle" x="125" y="125">Application</text>
+
+              <text x="210" y="30">Business layer</text>
+              <text x="210" y="90">Technical layer</text>
+            </svg>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>#5 - Every test should tell a story about your application</h2>
+          </section>
+          <section>
+            <svg viewBox="0 0 300 140" class="test-layers">
+              <rect width="200" height="55" class="main-box" />
+              <rect x="5" y="5" width="190" height="20" class="sub-box" />
+              <text text-anchor="middle" x="100" y="15">Test (Given/When/Then)</text>
+
+              <rect x="5" y="30" width="190" height="20" class="sub-box" />
+              <text text-anchor="middle" x="100" y="40">Steps (consistent business terminology)</text>
+
+              <text x="210" y="30">Business layer</text>
+
+              <text text-anchor="middle" x="110" y="70">Every test should be maintainable:</text>
+              <text text-anchor="middle" x="110" y="80">refactor your tests continuously, just like your code</text>
+
+              <path class="arrow" d="M90,90 l-40,30" />
+              <text text-anchor="middle" x="50" y="140">Manual execution</text>
+
+              <path class="arrow" d="M110,90 l40,30" />
+              <text text-anchor="middle" x="150" y="140">Automated execution</text>
+
+
+            </svg>
+          </section>
+        </section>
+
+
+        <section>
+          <ul class="summary-hl">
+            <li>Who we are</li>
+            <li>Key learnings</li>
+            <li class="current">Demo: business layer</li>
+            <li>Demo: technical layer</li>
+          </ul>
+        </section>
+
+        <section>
+          <ul class="summary-hl">
+            <li>Who we are</li>
+            <li>Key learnings</li>
+            <li>Demo: business layer</li>
+            <li class="current">Demo: technical layer</li>
+          </ul>
+        </section>
+      </section>
+    </div>
+
+    <script src="../lib/js/utils.js"></script>
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../lib/js/circle-arrow.js"></script>
+    <script src="../lib/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c / t',
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../plugin/zoom-js/zoom.js', async: true },
+          { src: '../plugin/notes/notes.js', async: true }
+        ]
+      });
+      </script>
+  </body>
+</html>

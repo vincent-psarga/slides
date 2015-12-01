@@ -1,3 +1,14 @@
+img.logo {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+em {
+  color: #f3554c;
+  font-weight: bold !important;
+}
+
 ul.summary, ul.summary-hl {
   list-style-type: none;
   font-size: 1.7em;
@@ -16,6 +27,51 @@ svg text {
   fill: #FFF;
   font-size: 80%;
   opacity: 0.25;
+}
+
+#test-pyramide {
+  width: 100%;
+}
+
+#test-pyramide > text {
+  opacity: 1;
+  font-size: 30%;
+}
+
+#test-pyramide polygon {
+  filter: url(#box-shadow);
+}
+
+#whoweare * {
+  text-align: center;
+}
+
+.test-layers {
+  width: 100%;
+}
+
+.test-layers > text {
+  opacity: 1;
+  font-size: 25%;
+}
+
+.test-layers .main-box {
+  fill: #5b5b5b;
+  rx: 3;
+  ry: 3;
+}
+
+.test-layers .sub-box{
+  fill: #f3554c;
+
+  rx: 1;
+  ry: 1;
+  filter: url(#box-shadow);
+}
+
+.test-layers .arrow {
+  stroke: #f3554c;
+  marker-end: url(#markerArrow);
 }
 
 svg#roadmap1 > text, svg#roadmap7 > text {

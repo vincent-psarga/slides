@@ -1,0 +1,17 @@
+<svg>
+  <defs>
+    <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="6"
+           orient="auto" style="fill: #f3554c">
+        <path d="M2,2 L2,11 L10,6 L2,2" />
+    </marker>
+
+    <filter id="box-shadow" filterUnits="userSpaceOnUse" x="0" y="0" width="200" height="120">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+      <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+      <feMerge> 
+        <feMergeNode/> <!-- this contains the offset blurred image -->
+        <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
