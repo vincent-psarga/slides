@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Automate your tests at the speed an scale of agile</title>
+    <title>Automate your tests at the speed and scale of agile</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -60,7 +60,7 @@
       <div class="slides">
         <section>
           <img src="../images/logo.png" class="logo"/>
-          <h1>Automate your tests at the speed an scale of agile</h1>
+          <h1>Automate your tests at the speed and scale of agile</h1>
         </section>
 
         <section data-transition="fade-out">
@@ -127,6 +127,21 @@
 
           <section>
             <p><em>DevOps</em> team: 10 deployments a day</p>
+
+            <svg viewBox="0 0 400 70" class="code-to-prod">
+              <circle cx="100" cy="25" r="20" />
+              <path class="arrow" d="M130,25 l35,0" />
+              <text x="100" y="60" text-anchor="middle">Code</text>
+
+              <circle cx="200" cy="25" r="20" />
+              <path class="arrow" d="M230,25 l35,0" />
+              <text x="200" y="60" text-anchor="middle">CI</text>
+
+
+              <circle cx="300" cy="25" r="20" />
+              <text x="300" y="60" text-anchor="middle">Production</text>
+
+            </svg>
           </section>
 
           <section>
@@ -169,7 +184,7 @@
 
         <section>
           <section>
-            <h2>#1 - Test automation is not about ROI but about velocity</h2>
+            <h2>#1 - Test automation is not about <em>ROI</em> but about <em>velocity</em></h2>
           </section>
           <section>
             <h3><img src="images/parkeon.png" class="logo header-logo" alt="parkeon sample" /></h3>
@@ -178,16 +193,18 @@
               <li>Dozens of tests using a robot</li>
               <li>100 manual tests</li>
             </ul>
+
+            <img src="images/ci-bot.png" class="deco" />
           </section>
         </section>
 
         <section>
-          <h2>#2 - Be careful with Record &amp; Playback</h2>
+          <h2>#2 - Be careful with <em>Record &amp; Playback</em></h2>
         </section>
 
         <section>
           <section>
-            <h2>#3 - Make sure you have the skills</h2>
+            <h2>#3 - Make sure you have the <em>skills</em></h2>
           </section>
           <section>
             <ul>
@@ -199,32 +216,32 @@
 
         <section>
           <section>
-            <h2>#4 - Separate your test framework into layers</h2>
+            <h2>#4 - Separate your test framework into <em>layers</em></h2>
           </section>
           <section>
             <svg viewBox="0 0 300 150" class="test-layers">
               <rect width="200" height="55" class="main-box" />
               <rect x="5" y="5" width="190" height="20" class="sub-box" />
-              <text text-anchor="middle" x="100" y="15">Test (Given/When/Then)</text>
+              <text text-anchor="middle" x="100" y="18">Test (Given/When/Then)</text>
 
               <rect x="5" y="30" width="190" height="20" class="sub-box" />
-              <text text-anchor="middle" x="100" y="40">Steps (consistent business terminology)</text>
+              <text text-anchor="middle" x="100" y="43">Steps (consistent business terminology)</text>
 
               <rect width="200" height="80" y="60" class="main-box" />
               <rect x="5" y="65" width="190" height="20" class="sub-box" />
-              <text text-anchor="middle" x="100" y="75">Text fixtures (Page object)</text>
+              <text text-anchor="middle" x="100" y="78">Text fixtures (Page object)</text>
 
               <rect x="5" y="90" width="93" height="20" class="sub-box" />
-              <text text-anchor="middle" x="50" y="100">Web driver</text>
+              <text text-anchor="middle" x="50" y="103">Web driver</text>
 
               <rect x="102" y="90" width="93" height="20" class="sub-box" />
-              <text text-anchor="middle" x="146" y="100">API</text>
+              <text text-anchor="middle" x="146" y="103">API</text>
 
               <rect x="5" y="115" width="45" height="20" class="sub-box" />
-              <text text-anchor="middle" x="27" y="125">Mock</text>
+              <text text-anchor="middle" x="27" y="128">Mock</text>
 
               <rect x="55" y="115" width="140" height="20" class="sub-box" />
-              <text text-anchor="middle" x="125" y="125">Application</text>
+              <text text-anchor="middle" x="125" y="128">Application</text>
 
               <text x="210" y="30">Business layer</text>
               <text x="210" y="90">Technical layer</text>
@@ -234,17 +251,17 @@
 
         <section>
           <section>
-            <h2>#5 - Every test should tell a story about your application</h2>
+            <h2>#5 - Every test should tell a <em>story</em> about your application</h2>
           </section>
           <section>
             <svg viewBox="0 0 230 100" class="test-layers">
               <rect x="15" width="200" height="55" class="main-box" />
 
               <rect x="20" y="5" width="190" height="20" class="sub-box" />
-              <text text-anchor="middle" x="115" y="15">Test (Given/When/Then)</text>
+              <text text-anchor="middle" x="115" y="18">Test (Given/When/Then)</text>
 
               <rect x="20" y="30" width="190" height="20" class="sub-box" />
-              <text text-anchor="middle" x="115" y="40">Steps (consistent business terminology)</text>
+              <text text-anchor="middle" x="115" y="43">Steps (consistent business terminology)</text>
 
               <text text-anchor="middle" x="115" y="70">Every test should be maintainable:</text>
               <text text-anchor="middle" x="115" y="80">refactor your tests continuously, just like your code</text>

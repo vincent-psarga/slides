@@ -4,6 +4,13 @@ img.logo {
   box-shadow: none !important;
 }
 
+img.deco {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  float: right;
+}
+
 em {
   color: #f3554c;
   font-weight: bold !important;
@@ -27,6 +34,11 @@ svg text {
   fill: #FFF;
   font-size: 80%;
   opacity: 0.25;
+}
+
+svg.code-to-prod text {
+  opacity: 1;
+  font-size: 30%;
 }
 
 #test-pyramide {
@@ -70,7 +82,7 @@ svg text {
   stroke-width: 0.25;
 }
 
-.test-layers .arrow {
+path.arrow {
   stroke: #f3554c;
   marker-end: url(#markerArrow);
 }
@@ -97,4 +109,9 @@ svg#roadmap5 text.arrow-3 {
 
 svg#roadmap6 text.arrow-4 {
   opacity: 1;
+}
+
+svg.code-to-prod circle {
+  stroke: white;
+  fill: none;
 }
