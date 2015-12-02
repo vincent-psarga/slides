@@ -66,7 +66,8 @@ svg text {
 
   rx: 1;
   ry: 1;
-  filter: url(#box-shadow);
+  stroke: black;
+  stroke-width: 0.25;
 }
 
 .test-layers .arrow {
