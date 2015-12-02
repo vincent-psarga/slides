@@ -280,13 +280,19 @@
         </section>
 
         <section>
-          <ul class="summary-hl">
-            <li>Who we are</li>
-            <li>Key learnings</li>
-            <li>Demo: business layer</li>
-            <li class="current">Demo: technical layer</li>
-          </ul>
-        </section>
+          <section>
+            <ul class="summary-hl">
+              <li>Who we are</li>
+              <li>Key learnings</li>
+              <li>Demo: business layer</li>
+              <li class="current">Demo: technical layer</li>
+            </ul>
+          </section>
+
+          <section>
+            <svg id="roadmap1" height="500" width="800">
+            </svg>
+          </section>
       </section>
     </div>
 
@@ -317,6 +323,60 @@
           { src: '../plugin/zoom-js/zoom.js', async: true },
           { src: '../plugin/notes/notes.js', async: true }
         ]
+      });
+
+
+      var baseColors = ['#FFDE05', '#E84B0C', '#BF00FF', '#0C88E8', '#00FF17'],
+        fadedColors = baseColors.map(function (color) {return blendColors(color, '#222222', 0.80); });
+
+      function makeArrowsConfig(containerId, colors) {
+        return circleArrowOptions = {
+          containerId: containerId,
+          cx: 400,
+          cy: 250,
+          radius: 180,
+          labelRadius: 200,
+          arrows: [
+            {
+              color: colors[0] || fadedColors[0],
+              label: '1 - Create scenario',
+              labelx: -230,
+              labely: -30
+            },
+            {
+              color: colors[1] || fadedColors[1],
+              label: '2 - Pull code',
+              labelx: 20,
+              labely: -10
+            },
+            {
+              color: colors[2] || fadedColors[2],
+              label: '3 - Implement',
+              labelx: 20
+            },
+            {
+              color: colors[3] || fadedColors[3],
+              label: '4 - Add scenario to test run',
+              labely: 40
+            },
+            {
+              color: colors[4] || fadedColors[4],
+              label: '5 - Let CI push results',
+              labelx: -220,
+              labely: 90
+            }
+          ],
+          arrowWidth: 50,
+          background: '#222222'
+        }
+      }
+
+      var roadmaps = [
+          makeArrowsConfig('roadmap1', baseColors)
+        ];
+
+      roadmaps.forEach(function (opts) {
+        circleArrow.addCircleArrow(opts);
       });
       </script>
   </body>
